@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+body{
+margin:0 auto auto;
+font-family: arial, sans-serif;
+font-size: 14px;
+width: 1100px;
+float: top;
+}
+
+.element a, .element a:hover, .element a:visited {
+	border: none;
+	text-decoration: none;
+	display: block;	
+}
+a, a:visited    {color: white}
+a:active    {color: white}
+img { border: none; }
+
+.head {
+color:#fff;
+width: 100%;
+background-color: #498E41;
+background-image: url("http://img205.imageshack.us/img205/4701/bannerbackground.gif");
+background-repeat: repeat-x;
+height: 62px;
+}
+
+.body {
+width: 100%;
+margin-top: 5px;
+}
+
+.left{
+width: 20%;
+float: left;
+font: 12px/170% Verdana, sans-serif;
+}
+
+.left a {
+	color:black;
+}
+
+.element {
+	height:	30px;
+	margin-bottom: 4px;
+	background: #498E41;
+	border: 2px solid #2E6228;
+}
+
+.element a{
+	padding: 5px 10px;
+}
+.cfocus, .cfocus a {
+	background-color: #3A7433 !important;
+	color:white;
+}
+
+.right, .right table{
+width: 79.5%;
+float: right;
+color:black;
+background: white;
+border-left: 1px dashed black;
+}
+
+.foot {
+color:#fff;
+width: 100%;
+margin-top: 5px;
+clear: both;
+background-color: #3B7634;
+font: 12px/170% Verdana, sans-serif;
+text-align: center;
+border-top: 1px solid black;
+}
+
+.title {
+        float:left;
+	width:50%;
+        height:62px;
+        left:15px;
+        position:relative;
+}
+
+.block {
+    float:left;
+    border: 10px solid white;
+    width:855px;
+    font-style:oblique;
+}
+
+.block2 {
+    float:left;
+    width:855px;
+}
+
+.subblock {
+    border: 5px solid white;
+    text-align:right;
+    float:left;
+    width:150px;
+}
+
+.button {
+    background-color:#fff;
+}
+
+.show a, .show a:visited{
+    color:black;
+}
+
+.even {
+    background:#CCC;
+}
+
+#error {
+	color: red;
+}
+
+.err {
+	border: 2px solid red;	
+}

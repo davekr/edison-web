@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>edison</short-name>
+  <uri>/WEB-INF/edison</uri>
+
+  <tag>
+        <name>StudentList</name>
+        <tag-class>servlet.StudentParrentTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>garant</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>Student</name>
+        <tag-class>servlet.StudentTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>parameter</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>PrubehList</name>
+        <tag-class>servlet.PrubehParrentTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <name>Prubeh</name>
+        <tag-class>servlet.PrubehTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>parameter</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>PredmetList</name>
+        <tag-class>servlet.PredmetParrentTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <name>Predmet</name>
+        <tag-class>servlet.PredmetTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>parameter</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>VyucujeList</name>
+        <tag-class>servlet.VyucujeParrentTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    <tag>
+        <name>NavstevujeList</name>
+        <tag-class>servlet.NavstevujeParrentTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <name>Navstevuje</name>
+        <tag-class>servlet.NavstevujeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>parameter</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+  <!-- A validator verifies that the tags are used correctly at JSP
+         translation time. Validator entries look like this: 
+      <validator>
+          <validator-class>com.mycompany.TagLibValidator</validator-class>
+          <init-param>
+             <param-name>parameter</param-name>
+             <param-value>value</param-value>
+	  </init-param>
+      </validator>
+   -->
+  <!-- A tag library can register Servlet Context event listeners in
+        case it needs to react to such events. Listener entries look
+        like this: 
+     <listener>
+         <listener-class>com.mycompany.TagLibListener</listener-class> 
+     </listener>
+   -->
+</taglib>
